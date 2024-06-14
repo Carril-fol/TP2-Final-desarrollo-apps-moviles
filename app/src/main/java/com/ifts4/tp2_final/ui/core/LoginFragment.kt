@@ -52,18 +52,10 @@ class LoginFragment : Fragment() {
                         saveDniUserSharedPreferences(emailField, passwordField)
                         goToFragmentActivity()
                     } else {
-                        Toast.makeText(
-                            context,
-                            "Credenciales invalidas",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        Toast.makeText(requireContext(), "Credenciales invalidas", Toast.LENGTH_SHORT).show()
                     }
                 } else {
-                    Toast.makeText(
-                        context,
-                        "Credenciales invalidas",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    Toast.makeText(requireContext(), "Credenciales invalidas", Toast.LENGTH_SHORT).show()
                 }
             }
         }
@@ -83,7 +75,11 @@ class LoginFragment : Fragment() {
 
     private fun isUserExists(emailUser: String, passwordUser: String): Boolean {
         val data = userViewModel.selectUserFilterByEmailAndPassword(emailUser, passwordUser)
-        return (emailUser == data.email) && (passwordUser == data.password)
+        return if (data == null) {
+            false
+        } else {
+            return (emailUser == data.email) && (passwordUser == data.password)
+        }
     }
 
     private fun saveDniUserSharedPreferences(emailUser: String, passwordUser: String) {
