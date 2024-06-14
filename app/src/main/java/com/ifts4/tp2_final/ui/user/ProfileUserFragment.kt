@@ -97,6 +97,7 @@ class ProfileUserFragment : Fragment() {
     private fun goToMainActivity() {
         val mainActivityIntent = Intent(requireActivity(), MainActivity::class.java)
         startActivity(mainActivityIntent)
+        requireActivity().finish()
     }
 
     private fun goToProfileSettingFragment() {
