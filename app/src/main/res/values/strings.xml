@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Tp2_final</string>
+
+    <string name="app_text_title">Hace Tu Visita Más Facil</string>
+    <string name="app_text_description">Elija su Fecha, Hora y Procedimiento en unos pocos pasos</string>
+    <string name="btnMainRegister">Empezar</string>
+    <string name="textoOtraOpcionMain">O</string>
+    <string name="btnMainLogin">Iniciar Sesión</string>
+
+    <!-- Register and Login Fragment strings-->
+    <string name="textRegister">Ingrese sus datos personales</string>
+    <string name="registerTextFirstName">Nombre</string>
+    <string name="registerTextLastName">Apellido</string>
+    <string name="registerTextEmail">Correo Electronico</string>
+    <string name="registerTextPassword">Contraseña</string>
+    <string name="registerTextConfirmPassword">Confirmar Contraseña</string>
+    <string name="registerTextDni">DNI</string>
+    <string name="registerAcceptTerms">He leído y acepto los términos y condiciones de uso</string>
+    <string name="registerTermsAndConditions">Términos y Condiciones de uso</string>
+    <string name="registerBtn">Registrarse</string>
+    <string name="loginBtn">Iniciar Sesión</string>
+
+    <!-- Home fragment strings -->
+    <string name="textGoodMorningMain">Buen día</string>
+    <string name="textNewDate">Nueva cita</string>
+    <string name="textDescriptionNewDate">Planea tu visita a la clinica</string>
+    <string name="textYourSchedules">Tus horarios</string>
+    <string name="textDescriptionYourSchedules">Comprueba tu lista de visitas</string>
+
+    <!-- Profile fragment strings -->
+    <string name="textTurnsRequested">Turnos solicitado</string>
+    <string name="textDniUser">DNI</string>
+
+
+    <!-- Turn fragment strings -->
+    <string name="textRequestYourTurn">¡Solicita tu turno!</string>
+    <string name="textChoseCategory">Elija una categoria</string>
+    <string name="textChoseDATE">Elija una fecha</string>
+    <string name="textBtnRequest">¡Solicitar!</string>
+    <string name="noOption">No</string>
+
+</resources>
